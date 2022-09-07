@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+  web:
+    environment:
+      - MONGO_HOST=mongo
+      - REDIS_HOST=redis
+      - IMPORT_DATA=true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8000:8000'
+    links:
+      - mongo
+      - redis
+    depends_on:
+      - mongo
+      - redis
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017'
+  redis:
+    image: redis:alpine
+    ports:
+      - '6379:6379'

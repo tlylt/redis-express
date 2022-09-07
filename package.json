@@ -1,0 +1,33 @@
+{
+  "name": "redis-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlylt/redis-express.git"
+  },
+  "keywords": [],
+  "author": "tlylt <liu_yongliang@hotmail.com> (https://github.com/tlylt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tlylt/redis-express/issues"
+  },
+  "homepage": "https://github.com/tlylt/redis-express#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4",
+    "morgan": "^1.10.0",
+    "redis": "^4.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

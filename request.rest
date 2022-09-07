@@ -1,0 +1,8 @@
+### CHECK SERVER ALIVE
+GET http://localhost:8000
+
+### GET DATA (with cache ability)
+GET http://localhost:8000/data
+
+### GET DATA (without cache ability)
+GET http://localhost:8000/users
